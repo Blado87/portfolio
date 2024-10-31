@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">    
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <title>Portfolio</title>
 </head>
+
 <body>
-    
+  <!-- titulo -->
+  <!-- Navbar Component -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__left">
+        <img src="assests/icons/terminal.svg" alt="Icono" class="navbar__icon" />
+        <h1 class="navbar__title">{ Mi Portafolio }</h1>
+      </div>
+      <a href="#about" class="navbar__link">Sobre mí</a>
+    </nav>
+  </header>
+  <!-- terminal -->
+  <!-- Terminal HTML Structure -->
+  <div class="terminal">
+    <!-- Terminal Header -->
+    <div class="terminal__header bg-gray-700 p-2 flex items-center justify-between">
+      <!-- Terminal Buttons -->
+      <div class="terminal__buttons flex gap-2 ml-2">
+        <span class="terminal__button terminal__button--close bg-red-500"></span>
+        <span class="terminal__button terminal__button--minimize bg-yellow-500"></span>
+        <span class="terminal__button terminal__button--maximize bg-green-500"></span>
+      </div>
+      <p class="terminal__title text-white text-sm text-center flex-grow">main.js</p>
+      <div class="terminal__spacer ml-2"></div>
+    </div>
+    <!-- Terminal Content -->
+    <div class="terminal__content bg-gray-800 p-4 text-sm text-gray-200 font-mono flex">
+      <!-- Line Numbers -->
+      <div class="terminal__line-numbers text-gray-600 pr-4 text-right">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+      </div>
+      <!-- Code Content -->
+      <div class="terminal__code">
+        <p><span class="text-green-500">const</span> <span class="text-blue-400">developer</span> = {</p>
+        <p> name: <span class="text-yellow-500">'Bladimir Benavides'</span>,</p>
+        <p> role: <span class="text-yellow-500">'Frontend Developer'</span>,</p>
+        <p> skills: [<span class="text-yellow-500">'HTML'</span>, <span class="text-yellow-500">'CSS'</span>, <span
+            class="text-yellow-500">'JavaScript'</span>, <span class="text-yellow-500">'Python'</span>, <span class="text-yellow-500">'Git'</span>],</p>
+        <p>};</p>
+      </div>
+    </div>
+  </div>
+  <!-- proyectos -->
+  <div class="section">
+    <h2 class="section__title">{ Proyectos }</h2>
+    <div class="section__divider"></div>
+</div>
+
+
+
+
+
 </body>
 </html>
