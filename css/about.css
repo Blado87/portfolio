@@ -1,68 +1,68 @@
-@import url('index.css');
+@import url("index.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: monospace;
-    background-color: var(--color-black);
-    color: var(--color-gray);
-    line-height: 1.6;
-  }
-  
-  .title__link {
-    color: var(--color-gray);
-    text-decoration: none;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 0.3rem 0.3rem;
-    transition: color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .title__link:hover {
-    color: var(--color-lime-500);
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-    padding: 1rem;
-  }
-  
-  .about-section {
-    max-width: 600px;
-    background-color: var(--color-gray-900);
-    color: var(--color-gray-300);
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .about-section:hover {
-    transform: translateY(-4px);
-  }
-  
-  .about-section h2 {
-    color: var(--color-lime-500);
-    font-family: monospace;;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
+body {
+  font-family: monospace;
+  background-color: var(--color-black);
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+.title__link {
+  color: var(--color-gray);
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.3rem 0.3rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.title__link:hover {
+  color: var(--color-lime-500);
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 1rem;
+}
+
+.about-section {
+  max-width: 600px;
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-300);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-4px);
+}
+
+.about-section h2 {
+  color: var(--color-lime-500);
+  font-family: monospace;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: var(--color-gray-500);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
   .about-section p {
-    font-size: 1rem;
-    color: var(--color-gray-500);
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
   }
-
-  @media (max-width: 600px) {
-    .about-section p {
-        font-size: 0.9rem;
-    }
-  }
+}
