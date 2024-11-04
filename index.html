@@ -4,10 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título con palabras clave relevantes -->
+  <title>Portafolio de Bladimir Benavides | Desarrollador Front-End</title>
+
+  <!-- Descripción del portafolio -->
+  <meta name="description"
+    content="Portafolio de Bladimir Benavides, desarrollador front-end especializado en HTML, CSS, JavaScript y diseño web responsivo. Explora mis proyectos y experiencia en desarrollo web.">
+
+  <!-- Palabras clave relevantes para SEO -->
+  <meta name="keywords"
+    content="portafolio desarrollador front-end, portafolio web, HTML, CSS, JavaScript, proyectos de desarrollo web, Bladimir Benavides">
+
+  <!-- Autor de la página -->
+  <meta name="author" content="Bladimir Benavides">
+
+  <link rel="icon" href="assests/icons/terminal-fill.ico" sizes="any">
+  <link rel="icon" href="assests/icons/terminal-fill.svg" type="image/svg+xml">
+
+  <!-- Enlaces a hojas de estilo -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
-  <title>Portfolio</title>
 </head>
+
 
 <body>
   <main>
@@ -19,7 +38,7 @@
           <h1 class="navbar__title">{Frontend Developer}</h1>
         </div>
         <div class="navbar__right">
-          <a href="/about" class="navbar__link">About me</a>
+          <a href="about.html" class="navbar__link">About me</a>
         </div>
       </nav>
     </header>
@@ -37,98 +56,91 @@
           <a href="assests/doc/Currículo.pdf" download class="intro__button">Descargar CV</a>
         </div>
       </div>
+      <div class="scroll-icon"><img src="assests/icons/arrow-down.svg" alt=""></div>
     </section>
-    <!-- DIVIDER -->
-    <div class="section__divider">
-      <div class="section__divider-line"></div>
-    </div>
     <!-- PROYECTOS -->
     <section class="projects">
       <h2 class="projects__title">Proyectos</h2>
       <div class="card-container">
-        <!-- CARD 1 -->
-        <div class="project-card">
-          <img src="assests/img/web.png" alt="Captura de la página del proyecto" class="project-card__image">
-          <h3 class="project-card__title">Máquina de Galton</h3>
-          <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
-            máquina
-            de Galton, mostrando patrones de distribución.</p>
-          <div class="project-card__badges">
-            <span class="project-card__badge project-card__badge--html">HTML</span>
-            <span class="project-card__badge project-card__badge--css">CSS</span>
-            <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
+        <div>
+          <!-- CARD 1 -->
+          <div class="project-card">
+            <img src="assests/img/img_galton.png" alt="Captura de la página del proyecto" class="project-card__image">
+            <h3 class="project-card__title">Máquina de Galton</h3>
+            <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
+              máquina de Galton, mostrando patrones de distribución.</p>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--html">HTML</span>
+              <span class="project-card__badge project-card__badge--css">CSS</span>
+              <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
+                target="_blank">GitHub</a>
+              <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
+                target="_blank">Ver Proyecto</a>
+            </div>
           </div>
-          <div class="project-card__actions">
-            <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
-              target="_blank">GitHub</a>
-            <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
-              target="_blank">Ver Proyecto</a>
-          </div>
-        </div>
-        <!-- CARD 2 -->
-        <div class="project-card">
-          <img src="assests/img/web2.png" alt="Captura de la página del proyecto" class="project-card__image">
-          <h3 class="project-card__title">100Box</h3>
-          <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
-            máquina
-            de Galton, mostrando patrones de distribución.</p>
-          <div class="project-card__badges">
-            <span class="project-card__badge project-card__badge--html">HTML</span>
-            <span class="project-card__badge project-card__badge--css">CSS</span>
-            <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
-          </div>
-          <div class="project-card__actions">
-            <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
-              target="_blank">GitHub</a>
-            <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
-              target="_blank">Ver Proyecto</a>
-          </div>
-        </div>
-        <!-- CARD 3 -->
-        <div class="project-card">
-          <img src="assests/img/web3.png" alt="Captura de la página del proyecto" class="project-card__image">
-          <h3 class="project-card__title">Sport Web</h3>
-          <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
-            máquina
-            de Galton, mostrando patrones de distribución.</p>
-          <div class="project-card__badges">
-            <span class="project-card__badge project-card__badge--html">HTML</span>
-            <span class="project-card__badge project-card__badge--css">CSS</span>
-            <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
-          </div>
-          <div class="project-card__actions">
-            <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
-              target="_blank">GitHub</a>
-            <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
-              target="_blank">Ver Proyecto</a>
+          <!-- CARD 2 -->
+          <div class="project-card">
+            <img src="assests/img/web2.png" alt="Captura de la página del proyecto" class="project-card__image">
+            <h3 class="project-card__title">100Box</h3>
+            <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
+              máquina de Galton, mostrando patrones de distribución.</p>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--html">HTML</span>
+              <span class="project-card__badge project-card__badge--css">CSS</span>
+              <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
+                target="_blank">GitHub</a>
+              <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
+                target="_blank">Ver Proyecto</a>
+            </div>
           </div>
         </div>
-        <!-- CARD 4 -->
-        <div class="project-card">
-          <img src="assests/img/web4.png" alt="Captura de la página del proyecto" class="project-card__image">
-          <h3 class="project-card__title">Clon Mines</h3>
-          <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
-            máquina
-            de Galton, mostrando patrones de distribución.</p>
-          <div class="project-card__badges">
-            <span class="project-card__badge project-card__badge--html">HTML</span>
-            <span class="project-card__badge project-card__badge--css">CSS</span>
-            <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
+        <div>
+          <!-- CARD 3 -->
+          <div class="project-card">
+            <img src="assests/img/web3.png" alt="Captura de la página del proyecto" class="project-card__image">
+            <h3 class="project-card__title">Sport Web</h3>
+            <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
+              máquina de Galton, mostrando patrones de distribución.</p>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--html">HTML</span>
+              <span class="project-card__badge project-card__badge--css">CSS</span>
+              <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
+                target="_blank">GitHub</a>
+              <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
+                target="_blank">Ver Proyecto</a>
+            </div>
           </div>
-          <div class="project-card__actions">
-            <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
-              target="_blank">GitHub</a>
-            <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
-              target="_blank">Ver Proyecto</a>
+          <!-- CARD 4 -->
+          <div class="project-card">
+            <img src="assests/img/clon_mines.png" alt="Captura de la página del proyecto" class="project-card__image">
+            <h3 class="project-card__title">Clon Mines</h3>
+            <p class="project-card__description">Explora la estadística de manera divertida con este simulador de la
+              máquina de Galton, mostrando patrones de distribución.</p>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--html">HTML</span>
+              <span class="project-card__badge project-card__badge--css">CSS</span>
+              <span class="project-card__badge project-card__badge--javascript">JavaScript</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/tuusuario/proyecto" class="project-card__button project-card__button--github"
+                target="_blank">GitHub</a>
+              <a href="https://proyecto-desplegado.com" class="project-card__button project-card__button--live"
+                target="_blank">Ver Proyecto</a>
+            </div>
           </div>
         </div>
         <!-- fin container -->
       </div>
     </section>
-    <!-- DIVIDER -->
-    <div class="section__divider">
-      <div class="section__divider-line"></div>
-    </div>
     <!-- TECNOLOGIAS -->
     <section class="tech">
       <h2 class="tech__title">Tecnologías</h2>
@@ -155,10 +167,6 @@
         </div>
       </div>
     </section>
-    <!-- DIVIDER -->
-    <div class="section__divider">
-      <div class="section__divider-line"></div>
-    </div>
     <!-- CONTACTO -->
     <section class="contact">
       <div class="contact__content">
@@ -180,10 +188,6 @@
         </p>
       </div>
     </section>
-    <!-- DIVIDER -->
-    <div class="section__divider">
-      <div class="section__divider-line"></div>
-    </div>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__social-links">
