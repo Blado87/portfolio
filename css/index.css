@@ -3,6 +3,7 @@
   --color-gray: #f9fafb;
   --color-gray-300: #d1d5db;
   --color-gray-500: #71717a;
+  --color-gray-800: #262626;
   --color-gray-900: #18181b;
   --color-linkedin: #0a66c2;
   --color-lime-500: #84cc16;
@@ -81,20 +82,12 @@ body {
 
 .intro__content {
   margin-top: 5rem;
-  max-width: 400px;
-}
-
-.intro__photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
+  max-width: 500px;
 }
 
 .intro__name {
   font-family: monospace;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   margin: 0.5rem 0;
 }
 
@@ -204,6 +197,10 @@ body {
   text-align: center;
   transition: transform 0.3s ease;
   margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(var(--color-black), var(--color-black)), linear-gradient(45deg, var(--color-lime-500), var(--color-linkedin), var(--color-lime-500));
 }
 
 .project-card:hover {
@@ -243,23 +240,10 @@ body {
 .project-card__badge {
   font-family: monospace;
   font-size: 0.85rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 8px;
-}
-
-.project-card__badge--html {
-  color: var(--color-html-logo);
-  border: 1px solid var(--color-html-logo);
-}
-
-.project-card__badge--css {
-  color: var(--color-css-logo);
-  border: 1px solid var(--color-css-logo);
-}
-
-.project-card__badge--javascript {
-  color: var(--color-js-logo);
-  border: 1px solid var(--color-js-logo);
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  background-color: var(--color-gray-800);
+  color: var(--color-gray-300);
 }
 
 .project-card__actions {
@@ -285,22 +269,23 @@ body {
   border: 1px solid var(--color-gray-500);
   border-radius: 4px;
   color: var(--color-gray);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s, color 0.3s;
 }
 
 .project-card__button--github:hover {
-  background-color: var(--color-gray-500);
+  background-color: var(--color-gray-800);
 }
 
 .project-card__button--live {
   font-family: monospace;
   font-size: 1rem;
-  background-color: var(--color-gray);
+  background-color: var(--color-lime-500);
   color: var(--color-black);
+  transition: background-color 0.2s, color 0.3s;
 }
 
 .project-card__button--live:hover {
-  background-color: var(--color-lime-500);
+  background-color: var(--color-lime-300);
 }
 
 /* TECNOLOGIAS */
